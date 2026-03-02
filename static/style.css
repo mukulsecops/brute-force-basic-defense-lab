@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box,
+.dashboard {
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    width: 100%;
+    background: #00adb5;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #007b80;
+}
+
+.error {
+    color: red;
+}
