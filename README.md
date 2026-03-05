@@ -12,7 +12,7 @@ Our task is to simulate the attack and implement defenses to stop it.
 
 ## Architecture
 
-Image of the architecture.
+![Architecture Design](assets/architecture-design.png)
 
 ## Setup
 
