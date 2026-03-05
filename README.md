@@ -56,13 +56,13 @@ Run the attack again to observe the defense.
 
 Monitor authentication logs:
 
-### On Linux/MacOS:
+#### On Linux/MacOS:
 
 ```bash
 tail -f logs/auth.log
 ```
 
-### On Windows:
+#### On Windows (Powershell):
 
 ```powershell
 Get-Content -Path "logs\auth.log" -Wait
@@ -72,9 +72,9 @@ Example output:
 
 ```bash
 
-2026-03-05 12:51:10,002 | WARNING | [AUTH_FAIL] | IP=172.18.0.2 | USERNAME=admin
-2026-03-05 12:51:10,012 | WARNING | [AUTH_FAIL] | IP=172.18.0.2 | USERNAME=admin
-2026-03-05 12:51:10,012 | WARNING | [IP_BLOCKED] | IP=172.18.0.2
+2026-03-05 12:51:10,002 | WARNING | [AUTH_FAIL] | IP=[REDACTED] | USERNAME=admin
+2026-03-05 12:51:10,012 | WARNING | [AUTH_FAIL] | IP=[REDACTED] | USERNAME=admin
+2026-03-05 12:51:10,012 | WARNING | [IP_BLOCKED] | IP=[REDACTED]
 
 ```
 
