@@ -1,5 +1,4 @@
 from flask import Flask, request, session, redirect, url_for, render_template
-from datetime import datetime
 import defense
 
 app = Flask(__name__)
@@ -79,5 +78,6 @@ def logout():
     return redirect(url_for("login"))
 
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+if __name__ == '__main__':
+    # Ensure the app runs on 0.0.0.0 to be accessible from outside the container
+    app.run(host='0.0.0.0', port=5000, debug=True)
