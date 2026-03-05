@@ -1,6 +1,6 @@
 import requests
 
-URL = "http://localhost:5000/login"
+URL = "http://app:5000/login"
 
 USERNAME = "admin"
 

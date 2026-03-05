@@ -2,8 +2,14 @@
 
 ## Scenario
 
-## Attack Simulation
+## Architecture
 
-## Defense Implementation
+## Setup
 
-## Running the Lab
+## Run containers
+
+## Run attacker
+
+## Enable defense
+
+## Expected output
