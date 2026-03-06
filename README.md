@@ -19,7 +19,7 @@ Our task is to simulate the attack and implement defenses to stop it.
 Clone the repository and start the lab environment:
 
 ```bash
-docker compose up --build
+docker compose up -d --build
 ```
 
 The login application will run at:

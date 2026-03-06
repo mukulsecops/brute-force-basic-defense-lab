@@ -5,7 +5,7 @@ app = Flask(__name__)
 app.secret_key = "supersecretkey"
 
 # Toggle Security
-ACTIVATE_SECURITY=True
+ACTIVATE_SECURITY=False
 
 # Hardcoded credentails
 USERNAME="admin"
