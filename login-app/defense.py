@@ -1,4 +1,8 @@
 import logging, time
+from colorama import Fore, Style, init
+
+# initializing colorama
+init(autoreset=True)
 
 # Security Configs
 MAX_ATTEMPTS=5
@@ -57,19 +61,21 @@ def track_failed_attempt(ip):
 
     if failed_attempts[ip] >= MAX_ATTEMPTS:
         blocked_ips[ip] = time.time() + BLOCK_TIME
-        auth_logger.warning(f"[IP_BLOCKED] | IP={ip}")
+        auth_logger.warning(Fore.MAGENTA + f"[!] BRUTE_FORCE_DETECTED | IP={ip} | Possible brute force detected" + Style.RESET_ALL)
+        auth_logger.error(Fore.RED + f"[X] IP_BLOCKED | IP={ip} | Too many failed login attempts" + Style.RESET_ALL)
         failed_attempts[ip] = 0
 
 
 def auth_log_success(ip, username):
-    auth_logger.info(f"[AUTH_SUCCESS] | IP={ip} | USERNAME={username}")
+    auth_logger.info(Fore.GREEN + f"[+] AUTH_SUCCESS | IP={ip} | USERNAME={username}" + Style.RESET_ALL)
 
 
 def auth_log_failure(ip, username):
-    auth_logger.warning(f"[AUTH_FAIL] | IP={ip} | USERNAME={username}")
+    auth_logger.warning(Fore.YELLOW + f"[-] AUTH_FAIL | IP={ip} | USERNAME={username}" + Style.RESET_ALL)
 
 def ip_block_attempt_log(ip):
-    auth_logger.warning(f"[BLOCKED_ATTEMPT] | IP={ip}")
+    auth_logger.error(Fore.RED + f"[!] IP_BLOCKED_ATTEMPT | IP={ip} | Trying with blocked IP" + Style.RESET_ALL)
 
 def rate_limit_log(ip):
-    auth_logger.warning(f"[RATE_LIMIT] | IP={ip}")
+    auth_logger.error(Fore.RED + f"[X] [RATE_LIMIT] | IP={ip}" + Style.RESET_ALL)
+
