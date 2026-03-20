@@ -22,6 +22,12 @@ Clone the repository and start the lab environment:
 docker compose up -d --build
 ```
 
+Check the status of docker containers:
+
+```bash
+docker ps
+```
+
 The login application will run at:
 
 ```
