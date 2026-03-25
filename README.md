@@ -4,6 +4,8 @@ A practical cybersecurity lab demonstrating **how a brute force login attack wor
 
 This lab follows the **Attack → Detect → Defend** approach.
 
+![Dictionary-based Brute Force Attack Cover Image](assets/brute-force-attack-vs-ip-blocking-rate-limiting.jpg)
+
 ## Scenario
 
 A SaaS login application is targeted by automated login attempts trying multiple passwords using a dictionary based brute force attack.
@@ -12,7 +14,7 @@ Our task is to simulate the attack and implement defenses to stop it.
 
 ## Architecture
 
-![Architecture Design](assets/architecture-design.png)
+![Architecture Diagram](assets/arch-diagram-Lab001.jpg)
 
 ## Setup
 
@@ -105,4 +107,8 @@ Mukul Chauhan
 
 Full explanation available in the website article.
 
+[Resonanex Full Lab Link]: https://resonanex.com/how-to-defend-a-login-system-from-brute-force-attacks
+
 Checkout the Youtube Video below.
+
+[![Watch the video](https://img.youtube.com/vi/ViBcB5E-Yng/default.jpg)](https://youtu.be/ViBcB5E-Yng?si=NiwG45KIfsfX0svj)
