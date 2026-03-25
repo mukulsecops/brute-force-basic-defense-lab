@@ -105,10 +105,7 @@ The next lab demonstrates **defending against distributed brute force attempts**
 Mukul Chauhan
 *Resonanex Labs*
 
-Full explanation available in the website article.
+## 🔗 References
 
-[Resonanex Full Lab Link]: https://resonanex.com/how-to-defend-a-login-system-from-brute-force-attacks
-
-Checkout the Youtube Video below.
-
-[![Watch the video](https://img.youtube.com/vi/ViBcB5E-Yng/default.jpg)](https://youtu.be/ViBcB5E-Yng?si=NiwG45KIfsfX0svj)
+- 📄 [Full Lab Article](https://resonanex.com/how-to-defend-a-login-system-from-brute-force-attacks)
+- 🎥 [Watch on YouTube](https://youtu.be/ViBcB5E-Yng?si=847918AWGH_xx5Fg)
